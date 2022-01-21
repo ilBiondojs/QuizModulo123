@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #region --- CSS ------>
+    <link rel="stylesheet" href="css/CSS.CSS">
+    <link rel="stylesheet" href="globalSources/css/div.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- #endregion-->
+    <title>Quiz M123</title>
+</head>
+<body onchange="checkMod()">
+    <div class="center tcenter border first">
+        <h1>Quiz M123</h1>
+    </div>
+    <div class="center border first">
+        <div class="margin">
+            <h3>Seleziona la modalità che vuoi fare</h3>
+            <div>
+                <input type="radio" name="mod" id="modL" checked>
+                <label for="modL">Livello</label><br>
+                <input type="radio" name="mod" id="modT">
+                <label for="modT">Tempo</label><br>
+                <input type="radio" name="mod" id="modP">
+                <label for="modP">Progresso</label><br>
+            </div>
+            <div id="levelDiv">
+                <h3>Difficoltà</h3>
+                <input type="radio" name="diff" id="diffF" checked>
+                <label for="modL">Facile</label><br>
+                <input type="radio" name="diff" id="diffM">
+                <label for="modL">Medio</label><br>
+                <input type="radio" name="diff" id="diffD">
+                <label for="modL">Difficile</label><br>
+            </div>
+        </div>
+        <div class="border login">
+            <div class="margin">
+                <input type="text" placeholder="Username">
+                <br>
+                <input type="password" name="password" id="password" placeholder="password">
+                <input type="submit">
+            </div>
+        </div>
+        <div class="border center tcenter first button" onclick="startTheQuiz()">
+            <h2>Start the Quiz</h2>
+            <p>
+                Cliccando il bottone consente pianemnte la memorizzazione dei suoi dati
+            </p>
+        </div>
+    </div>
+    <div class="border center">
+        <h2 class="divDes">Descrizione</h2>
+        <div class="descriptionBody divDes" id="descriptionBodyDiv">
+
+        </div>
+    </div>
+    <div class="gitHub" style="font-size: 30px;position: fixed;bottom: 0px;left: 0px;"><a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a></div>
+</body>
+<script src="js/main.js"></script>
+</html>

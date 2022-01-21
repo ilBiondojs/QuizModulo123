@@ -1,0 +1,15 @@
+.first{
+    border-bottom: none !important;
+}
+.divDes{
+    margin-left: 7%;
+}
+.button{
+    cursor: pointer;
+}
+.login{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 20%;
+}
